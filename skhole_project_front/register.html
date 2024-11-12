@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="BG"></div>
+    <div class="container">
+        <div class="box-1">
+            <div class="q1">,,</div>
+            <div class="quote">
+                Live, Learn <br> & Grow
+            </div>
+            <div class="q2">,,</div>
+        </div>
+        <div class="box-2">
+            <div class="form">
+                <div class="title">Create an <span>account</span></div>
+
+                <div class="form-name">
+                    <input type="text" placeholder="First name" id="firstName">
+                    <input type="text" placeholder="Last name" id="lastName">
+                </div>
+
+                <div class="form-other">
+                    <input type="text" placeholder="User / Channel / Institute name" id="userName">
+                    <div class="custom-select">
+                        <select id="role">
+                            <option value="0">Account type</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                        <img class="custom-icon" src="resources/icon.svg">
+                    </div>
+
+                    <input type="file" id="profilePicture" accept="image/*" required>
+
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="password" placeholder="Password" id="psw">
+                    <input type="password" placeholder="Confirm Password" id="repeatPsw">
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" name="" id="">
+                    <p class="txt2">I agree to the <a href="">Terms & Conditions</a></p>
+                </div>
+
+                <button class="btn regBtn" id="regBtn" type="submit">Create account</button>
+                <br><br>
+                <p class="txt1">Already have an acount? <a href="login.html">Log in</a></p>
+                <p class="txt1"><a href="index.html">Back To Home</a></p>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/vendor/three.r134.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="scripts/user_register.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#BG",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0xa2f7,
+            backgroundColor: 0xf4f4ff,
+            maxDistance: 28.00,
+            spacing: 20.00
+        })
+    </script>
+</body>
+
+</html>

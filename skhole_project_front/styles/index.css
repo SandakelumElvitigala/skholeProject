@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+body,
+html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../../public/bg.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url('../../public/bg2.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.maincont {
+    height: 50vh;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+}
+.btnRow{
+    height: 50vh;
+    display: flex;
+    justify-items: center;
+}
+
+.btnRow button{
+    width: 80%;
+    margin-top: 10vh;
+}
+
+.div1{
+    width: 100vw;
+    height: auto;
+    background: #2e18f175;
+}
+
+.txt{
+    margin: 2rem;
+}
+
+.lineUp {
+    animation: 3s anim-lineUp ease-out;
+    font-size: clamp(4rem, 8vw, 14rem);
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+
+.parallax1 .container{
+    width: 100vw;
+    height: 50vh;
+}

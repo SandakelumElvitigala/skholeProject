@@ -1,0 +1,73 @@
+#videosShow{
+    padding: 5vh;
+}
+
+#history{
+    padding: 5vh;
+}
+
+.video-row, .watched-row {
+    height: 35vh; /* Adjust height for both video and watched rows */
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    position: relative; /* Ensures overlay positioning */
+}
+
+.thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.thumbnail-container1{
+    width: 35vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures thumbnail covers the container */
+}
+
+.video-thumbnail1{
+    width: 35vh;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #fff; /* White text */
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; /* Centers text in overlay */
+    z-index: 1; /* Overlay on top of thumbnail */
+}
+
+.overlay-container1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 35vh;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: #fff; /* White text */
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; /* Centers text in overlay */
+    z-index: 1; /* Overlay on top of thumbnail */
+}
+

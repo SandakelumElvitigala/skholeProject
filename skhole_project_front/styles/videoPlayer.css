@@ -1,0 +1,140 @@
+
+.video-container {
+    position: relative;
+    width: 62vw; /* This makes the video container responsive */
+    height: 500px; /* You can adjust the height based on your requirements */
+    background-color: black; /* Optional: background color to fill in empty areas */
+    overflow: hidden; /* Hide any content that exceeds the container size */
+    margin-top: 10vh;
+}
+
+/* Style for the video itself */
+.video-container video {
+    width: 100%; /* Ensures the video fills the width of the container */
+    height: 100%; /* Ensures the video fills the height of the container */
+    object-fit: cover; /* The video will cover the entire container while maintaining aspect ratio */
+}
+
+#video-thumbnail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#playVideo{
+    height: 100%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.7
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.left {
+    position: relative;
+    top: 1%;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-timer {
+    position: relative;
+    top: 5.2px;
+    right: 6px;
+    display: flex;
+    flex-direction: row;
+    color: #efefef;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#separator {
+    margin: 0 5px;
+    font-size: 16px;
+    font-family: "Open sans";
+}
+
+.right {
+    position: relative;
+    padding: 10px;
+    top: 1.5px;
+}
+
+.fa-volume-up,
+.fa-solid {
+    font-size: small;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+button,
+input {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+}
+
+#volume {
+    position: relative;
+    left: 5px;
+    width: 50px;
+    height: 3px;
+}
+
+#mute {
+    cursor: pointer;
+}
+
+.playback-line {
+    position: relative;
+    top: 2.7px;
+    height: 4px;
+    background-color: #ddd;
+    width: 40%;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #0078d4;
+    transition: width 0.1s linear;
+}

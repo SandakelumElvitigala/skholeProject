@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#BG {
+    height: 100dvh;
+    width: 100dvw;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale() brightness(95%);
+}
+
+@font-face {
+    font-family: "custom-1";
+    src: url(../public/resources/Helvetica-Light.ttf);
+}
+
+@font-face {
+    font-family: "custom-2";
+    src: url(../public/resources/Helvetica-Light.ttf);
+}
+
+@font-face {
+    font-family: "custom-3";
+    src: url(../public/resources/Helvetica-Bold.ttf);
+}
+
+:root {
+    --gradient-1: linear-gradient(-54deg, #ffc813, #ffd013);
+    --gradient-2: linear-gradient(-75deg, #00F260, #0575E6);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100dvh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #e9e9e9;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x: hidden; */
+}
+
+.c1 {
+    width: 980px;
+    height: auto;
+    display: flex;
+    margin-right: 15px;
+    margin-left: 15px;
+    /* justify-content: center; */
+    align-items: center;
+    border: solid #ffffffae 1px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: #01b99d0b;
+}
+
+.box-1 {
+    height: 100%;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 51px;
+    font-family: "custom-1";
+    text-align: center;
+    background-image: var(--gradient-1);
+    background-clip: text;
+    color: #ffffff;
+}
+
+.q1 {
+    position: absolute;
+    font-size: 125px;
+    font-family: "custom-1";
+    margin-right: 175px;
+    margin-top: -65px;
+    scale: -1;
+    background-image: var(--gradient-1);
+    background-clip: text;
+    color: #ffffff;
+}
+
+.q2 {
+    position: absolute;
+    font-size: 125px;
+    font-family: "custom-1";
+    margin-left: 175px;
+    margin-top: 65px;
+    background-image: var(--gradient-1);
+    background-clip: text;
+    color: #ffffff;
+}
+
+.box-2 {
+    height: 97%;
+    width: 56.5%;
+    min-width: 340px;
+    margin-left: 0.75%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.form {
+    height: 100%;
+    width: 72%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    /* text-align: center; */
+    /* font-size: 285%; */
+    line-height: 85%;
+    font-size: 45px;
+    font-family: "custom-3";
+    font-weight: bold;
+    color: #333;
+}
+
+.txt1 {
+    width: 100%;
+    font-size: 13px;
+    font-family: "custom-2";
+    margin-top: 5px;
+    padding-left: 8px;
+    color: #333;
+}
+
+.form input {
+    height: 40px;
+    font-family: "custom-2";
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-inline: 12px;
+    margin-inline: 2px;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    background-color: #00000010;
+    transition: background-color 0.4s ease;
+}
+
+.form input:hover {
+    background-color: #00000020;
+}
+
+.form-name {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-name input {
+    width: 48%;
+}
+
+.form-other {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms {
+    width: 100%;
+    color: #333;
+    display: flex;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: #00000010; */
+}
+
+.terms input {
+    /* scale: 1.3; */
+    margin: 0;
+    margin-inline: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.txt2 {
+    font-size: 13px;
+    color: #333;
+    font-family: "custom-2";
+}
+
+.custom-select {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+select {
+    appearance: none;
+    width: 100%;
+    height: 40px;
+    color: #333;
+    font-family: "custom-2";
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-inline: 12px;
+    margin-inline: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #00000010;
+    transition: background-color 0.4s ease;
+}
+
+select:hover {
+    background-color: #00000005;
+}
+
+select option {
+    background-color: #00000010;
+    border: none;
+}
+
+.custom-icon {
+    position: absolute;
+    translate: -25% 50%;
+    pointer-events: none;
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+    color: #ffffff;
+    margin-inline: 2px;
+    border: none;
+    font-size: 18px;
+    font-family: "custom-3";
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--gradient-2);
+    background-size: 150% 150%;
+    background-position: 50%;
+    transition: background-position 1s ease, box-shadow 0.4s ease;
+}
+
+.btn:hover {
+    scale: 1.0;
+    box-shadow: 0 0 25px 5px #00000020;
+    background-position: 0%;
+}
+
+a {
+    /* text-decoration: none; */
+    background: var(--gradient-2);
+    background-clip: text;
+    color: transparent;
+}
+
+.title span {
+    background: var(--gradient-2);
+    background-clip: text;
+    color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 100dvw;
+        display: flex;
+        border: none;
+        margin: 0;
+        justify-content: center;
+        backdrop-filter: none;
+        background-color: transparent;
+    }
+
+    .box-1 {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .box-2 {
+        width: 500px;
+        margin-left: 0;
+    }
+
+    .form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .box-2 {
+        width: 80%;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .title {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .box-2 {
+        min-width: 310px;
+    }
+
+    .form {
+        min-width: 280px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .container {
+        height: 100dvh;
+        min-height: 500px;
+    }
+}
